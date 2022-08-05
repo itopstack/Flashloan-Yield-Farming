@@ -193,7 +193,7 @@ contract LeveragedYieldFarm is ICallee, DydxFlashloanBase {
   function handleWithdraw() internal returns (bool) {
     uint256 balance;
 
-    // Get curent borrow Balance
+    // Get current borrow Balance
     balance = cDai.borrowBalanceCurrent(address(this));
 
     // Approve tokens for repayment
